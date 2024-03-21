@@ -1,0 +1,332 @@
+@import "style.css";
+@import "root.css";
+
+section{
+  scroll-behavior: smooth;
+  
+}
+.planning-trip {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.working-day {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: 50px;
+  padding: 50px;
+  background: var(--color-blog);
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+.working-day table {
+  color: #fff;
+  padding: 1rem;
+  font-size: 20px;
+  font-weight: bolder;
+}
+.working-day table tr td{
+   display: block;
+  color: #fff;
+  width: fit-content;
+  font-size: 10px;
+  font-weight: bolder;
+  
+  
+ 
+}
+.working-day table tr #hour {
+  color: tomato;
+}
+.working-day p {
+  margin-left: 25%;
+  margin-bottom: 17px;
+  font-size: 30px;
+  font-weight: bolder;
+  color: #fff;
+}
+
+.avarage-time {
+  width: 100%;
+  height: 100%;
+  margin: 50px;
+  padding: 50px;
+  background: var(--color-blog);
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+.avarage-time .title {
+  font-size: 25px;
+  font-weight: bolder;
+  color: #fff;
+  padding: 10px;
+  text-transform: capitalize;
+  letter-spacing: -0.1rem;
+}
+
+.avarage-time p {
+  width: 100%;
+  font-size: 19px;
+  font-weight: bolder;
+  color: #fff;
+  padding: 6px;
+  text-transform: capitalize;
+}
+
+.avarage-time p span {
+  color: tomato;
+}
+
+/*form*/
+
+.booking-details {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:#fff
+}
+
+legend{
+    margin: 0 auto;
+    font-size: 30px;
+    font-weight: bolder;
+    color: #777;
+    padding: 10px;
+    
+}
+fieldset{
+    padding: 15px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    box-shadow:  0 0 10px 0px rgba(0,0,0,0.8);
+}
+.booking-details label {
+  
+  text-transform: capitalize;
+  color: #000;
+}
+.booking-details form input {
+  width: 250px;
+  height: 30px;
+  
+  border-radius: 30px;
+  outline: none;
+  padding: 5px;
+  margin-top: 10px;
+}
+.booking-details form input::placeholder {
+  font-size: 12px;
+  padding: 5px;
+  margin-left: 6px;
+}
+
+.booking-details form select {
+  width: 150px;
+  height: 30px;
+  border-radius: 20px;
+  outline: none;
+  padding: 6px;
+  margin-top: 10px;
+
+}
+.booking-details form .dwn-btn{
+    margin: 0 auto;
+    padding: 6px;
+    border: none;
+    outline: none;
+    background: var(--color-blog);
+    color: #fff;
+    border-radius: 15px;
+    font-weight: 500;
+}
+.booking-details form select option{
+    border-radius: 5px;
+}
+.booking-details form a{
+  display: flex;
+  width: 300px;
+  height: 80px;
+  border: 2 solid #000;
+
+}
+ .problem{
+  width: 355px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #93f9b9;
+  margin: 0 auto;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  box-shadow: 0 0 0 5 rgba(0,0,0,0.5);
+}
+ .problem a img{
+  display: block;
+  width: 80px;
+  height: 80px;
+  padding-right: 5px;
+
+}
+ .problem p{
+  padding: 10px;
+
+}
+
+/*Responsiveness*/
+
+@media screen and (min-width: 350px) and (max-width: 450px) {
+  .planning-trip {
+    display: block;
+    width: 100%;
+    padding-top: 50px ;
+
+    
+  }
+
+  .working-day {
+   
+    display: block;
+    width: 340px;
+    margin-left: 5px;
+    padding: 5px;
+    background: var(--color-blog);
+    border-radius: 10px;
+    border: none;
+    outline: none;
+  }
+  .working-day table tr td{
+    display: none;
+    color: #fff;
+    width: fit-content;
+    font-size: 10px;
+    font-weight: bolder;
+    
+    
+   
+  }
+  .working-day table tr #hour {
+    color: tomato;
+  }
+  .working-day p {
+    margin-top: 20px;
+    margin-left: 5px;
+    font-size: 15px;
+  }
+
+  .avarage-time {
+    width: 350px;
+    margin: 3px;
+    padding: 3px;
+    
+  }
+  .avarage-time .title{
+    font-size: 20px;
+    padding-top: 10px;
+  }
+  .booking-details form  {
+    width: 355px;
+   
+  }
+
+  .booking-details form input {
+    width: 200px;
+    height: 20px;
+    border-radius: 20px;
+    outline: none;
+    padding: 6px;
+    margin-top: 10px;
+  }
+  footer{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 350px) {
+  .planning-trip {
+    display: block;
+    width: 100%;
+    padding-top: 50px ;
+
+    
+  }
+
+  .working-day {
+   
+    display: block;
+    width: 300px;
+    margin-left: 5px;
+    padding: 5px;
+    background: var(--color-blog);
+    border-radius: 10px;
+    border: none;
+    outline: none;
+  }
+  .working-day table tr td{
+   
+    color: #fff;
+    width: fit-content;
+    font-size: 10px;
+    font-weight: bolder;
+    
+    
+   
+  }
+  .working-day table tr #hour {
+    color: tomato;
+  }
+  .working-day p {
+    margin-top: 20px;
+    margin-left: 5px;
+    font-size: 15px;
+  }
+
+  .avarage-time {
+    width: 300px;
+    margin: 5px;
+    padding: 5px;
+    
+  }
+  .booking-details{
+    width: 300px;
+  }
+  .booking-details form  {
+    width: 280px;
+    
+  }
+  .booking-details form input {
+    width: 150px;
+    height: 20px;
+   
+    border-radius: 20px;
+    outline: none;
+    padding: 6px;
+    margin-top: 10px;
+  }
+  .booking-details form a img{
+    width: 50px;
+    height: 50px;
+    padding-right: 2px;
+    margin: 0 auto;
+  }
+  .problem{
+    width: 300px;
+    
+  }
+  .problem a img{
+    display: block;
+    width: 30px;
+    height: 30px;
+  
+  }
+
+  footer{
+    display: none;
+  }
+}
