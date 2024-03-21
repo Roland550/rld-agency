@@ -1,0 +1,171 @@
+@import 'root.css';
+@import'style.css';
+body{
+    scroll-behavior: smooth;
+}
+
+.destination-menu{
+   width: 100%;
+   height: 100%;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-gap: 10px;
+   padding: 0;
+   
+}
+h1{
+    margin: auto;
+    font-weight: 800;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.img-place{
+    width: 400px;
+    height:500px;
+    display: grid;
+    
+    background: #fff;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    border-radius: 20px;
+    box-shadow:   0 0 20px 0px rgba(0,0,0,0.8);
+   
+}
+.place .img-place img{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.place .img-place .description{
+    border: 1 solid black;
+    position: static;
+    width: 300px;
+    
+    color: #000;
+    padding: 5px;
+    border-radius: 0px 0px 5px 5px;
+    margin-top: -10px;
+    box-shadow:  rgba(0, 0, 0, 0.5);
+
+    
+}
+.advert p{
+   display: block;
+   justify-content: flex-end;
+   align-items: center;
+   font-size: 25px;
+   font-weight: 300;
+   margin: 20px;
+   color: #000;
+}
+.advert p a{
+    color: tomato;
+    font-weight: 600;
+}
+
+/*Responsiveness*/
+
+
+@media screen and (min-width: 351px) and (max-width: 450px) {
+    section h2{
+        position: static;
+        padding-top: 40px;
+    }
+   
+    .destination-menu{
+       
+        display: block;
+        padding: 5px;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .place .img-place img{
+        width: 300px;
+        height: 300px;
+        margin: 5px;
+        border-radius: 10px;
+    }
+    .img-place{
+        width: 320px;
+        height:400px;
+        margin-left: 5px;
+        margin-bottom: 10px;
+       
+    }
+    h2{
+        display: flex;
+        width: 100%;
+        font-weight: 200;
+        font-size: 15px;
+       
+        margin-top: 40px;
+        
+    }
+    .advert p{
+        
+        font-size: 20px;
+        font-weight: 600;
+        margin: 20px;
+        
+     }
+    footer{
+        display: none;
+    }
+}
+
+
+
+@media screen and (min-width: 290px) and (max-width: 350px) {
+    section h2{
+        position: static;
+        padding-top: 40px;
+    }
+   
+    .destination-menu{
+       
+        display: block;
+        padding: 5px;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .place .img-place img{
+        width: 285px;
+        height: 300px;
+        margin:0 auto;
+        border-radius: 10px;
+    }
+    .img-place{
+        width: 310px;
+        height:400px;
+        margin-left: 1px;
+        margin-bottom: 13px;
+       
+    }
+    h2{
+        display: flex;
+        width: 100%;
+        font-weight: 200;
+        font-size: 15px;
+       
+        margin-top: 40px;
+        
+    }
+    .advert p{
+        
+        font-size: 15px;
+        font-weight: 500;
+        margin: 20px;
+        
+     }
+    footer{
+        display: none;
+    }
+}

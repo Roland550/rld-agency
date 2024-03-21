@@ -1,0 +1,171 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static '/css/style.css' %}">
+    <link rel="stylesheet" href="{% static '/css/ticket.css' %}">
+</head>
+<body>
+    <header>
+        <div class="content0 ">
+            <h1 class="gradient-text">Roland Agency<span class="orange">.</span></h1>
+            
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a> </li>
+                    <li><a href="destination">Destination</a> </li>
+                    <li><a href="ticket">Ticket</a> </li>
+                    <li><a href="contact">Contact</a> </li>    
+                </ul>
+            </nav>
+        </div>
+
+
+    </header>
+
+    <section>
+        <div class="planning-trip">
+            <div class="working-day">
+                <p>Working Day</p>
+                <!-- <table >
+                    <tr>
+                       <td >Time</td>
+                       <td>Monday</td>
+                       <td>tuesday</td>
+                       <td>wesnesday</td>
+                       <td>Thurday</td>
+                       <td>Friday</td>
+                       <td>Saturday</td>
+                       <td>Sunday</td>
+                    </tr>
+                    <tr>
+                        <td  id="hour">07:am</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                     </tr>
+                     <tr>
+                        <td  id="hour">08:am</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                     </tr>
+                     <tr>
+                        <td  id="hour">12:pm</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                     </tr>
+                     <tr>
+                        <td  id="hour">03:pm</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                     </tr>
+                     <tr>
+                        <td  id="hour">7:pm</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                     </tr>
+                     <tr>
+                        <td  id="hour">10:pm</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                     </tr>
+                </table> -->
+            </div>
+            <div class="avarage-time">
+                <p class="title">Prices and time taken to reach</p>
+                <p>Buea-Ngaoundere: <span>2200fr</span> 28h</p>
+                <p>Buea-Bamenda: <span>12000fr</span> 20h</p>
+                <p>Buea-Yaounde: <span>5000fr</span> 5h</p>
+                <p>Buea-Douala: <span>2000fr</span> 1h20mns</p>
+                <p>Buea-limbe: <span>1500fr</span> 25mns</p>
+
+            </div>
+        </div>
+    </section>
+     
+    <section>
+        <div class="problem">
+            <p>Sorry, we are facing problem for transaction details, could you send us a message throught these socials in order to help you easily during you payment</p>
+            <a href="https://wa.me/237690251475 "><img src="{% static '/images/what.png '%}" alt=""></a>
+        </div>
+    </section>
+
+    <section>
+        <div class="booking-details">
+            <form action="" method="post">
+                <fieldset >
+                    <legend>Payment Details</legend>
+                    <label for="number">ChairN∘:</label>
+                <input type="number" name="number"><br>
+                <label for="name">Name:   </label>
+                <input type="text" placeholder="your name"><br>
+                <label for="select">Select current place</label>
+                <select  id="select1">
+                    <option value="0" name="buea">Buea</option>
+                    <option value="300">Douala</option>
+                    <option value="1500">Limbe</option>
+                    <option value="10000">Bamenda</option>
+                </select><br>
+                <label for="select">Choose your destination</label>
+                <select  id="select2">
+                    <option value="0">Buea</option>
+                    <option value="2000" >Douala</option>
+                    <option value="1500">Limbe</option>
+                    <option value="10000">Bamenda</option>
+                </select><br>
+
+                <label for="name">Price:</label>
+                <input type="number" name="price" id="result" readonly hidden><br>
+                <label for="payment">Payment method</label><br><br>
+                <a href="#">
+                    <img src="{% static '/images/download (18).png' %}" alt="" srcset="">
+                    <img src="{% static '/images/download (11).jpg' %}" alt="" srcset="">
+                    
+                    <img src="{% static '/images/download (21).png' %}" alt="" srcset="">
+                    <img src="{% static 'images/download (12).jpg' %}" alt="" srcset="">
+                    
+                </a>
+                <label for=""></label><br>
+                <button type="button" class="dwn-btn" >Download receipt</button>
+                <!-- <button type="button" onclick="calculateSum()">calcule</button> -->
+                </fieldset>
+            </form>
+        </div>
+    </section>
+    
+    <!-- <script src="ticket.js"></script> -->
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculate Sum</title>
+  <script>
+    function calculateSum() {
+      // Get the selected options
+      var select1 = parseInt(document.getElementById("select1").value);
+      var select2 = parseInt(document.getElementById("select2").value);
+
+      // Calculate the sum
+      var sum = select1 + select2;
+
+      // Set the sum as the value of the input field
+      document.getElementById("result").value = sum;
+    }
+  </script>
+</head>
+<body>
+  <form>
+    <label for="select1">Select 1:</label>
+    <select id="select1">
+      <option value="0">ro</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <!-- Add more options if needed -->
+    </select>
+
+    <br>
+
+    <label for="select2">Select 2:</label>
+    <select id="select2">
+      <option value="buea">6</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <!-- Add more options if needed -->
+    </select>
+
+    <br>
+
+    <label for="result">Result:</label>
+    <input type="text" id="result" readonly>
+
+    <br>
+
+    <button type="button" onclick="calculateSum()">Calculate</button>
+  </form>
+</body>
+</html>

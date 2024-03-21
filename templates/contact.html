@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static '/css/style.css' %}">
+</head>
+<body>
+    <header>
+        <div class="content0 ">
+            <h1 class="gradient-text">Roland Agency<span class="orange">.</span></h1>
+            
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a> </li>
+                    <li><a href="destination">Destination</a> </li>
+                    <li><a href="ticket">Ticket</a> </li>
+                    <li><a href="contact">Contact</a></li>    
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <section id="contact1" class="contact">
+        <div class="sectpart2">
+            <h3>Contact us</h3>
+            <p>
+                Travel Ageny, we already known that going on trip helps you discover many things
+                equly finacial.kflvv fh
+                That's why we are shox wing all our effort to make this practiclmvreg
+            </p>
+            <form action="">
+                <label for="name">Name</label>
+                <input type="tex" id="name" placeholder="Provide your name">
+
+                <label for="mail">Email</label>
+                <input type="email" id="mail" placeholder="Provide your Email">
+
+                <input type="submit" value="OK" class="button3">
+            </form>
+            <fieldset ><legend >Or</legend></fieldset>
+            <div class="otherwise">
+                <a href="https://www.google.com"><img src="{% static '/images/google.png' %}" alt="" >google</a>
+                <a href=mailto:reoutaderoland@gmail.com?subject:Feedback ><img src="{% static '/images/gmail.png' %}" alt="" srcset="">gmail</a>
+                <a href="https://wa.me/237690251475 "><img src="{% static '/images/what.png' %}" alt="" srcset="">whatsapp</a>
+                <a href="https://www.facebook.com"><img src="{% static '/images/face.png' %}" alt="" srcset="">facebook</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+     <div class="sectpart2">
+        <h1>Travel Agency<span class="orange">.</span></h1>
+        <div class="copy">Copyright@ 2023....</div>
+     </div>
+    </footer>
+</body>
+</html>
